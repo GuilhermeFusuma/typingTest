@@ -20,6 +20,9 @@ main h1 {
     left: 5%;
     top: 2%;
 }
+#typeArea {
+    position: relative;
+}
 #textbox {
     display: flex;
     flex-wrap: wrap;
@@ -36,11 +39,29 @@ main h1 {
     font-size: 1.4rem;
 }
 .letter {
-    color: rgb(214, 214, 214);
+    color: rgb(184, 184, 184);
+}
+.typed {
+    color: white;
 }
 .correct {
     color: lime;
 }
 .incorrect {
     color: red;
+}
+
+input {
+    position: absolute;
+    inset: 0;
+    background: none;
+    border: none;
+    outline: none;
+}
+input:focus {
+    outline:rgb(52, 73, 83);
+}
+input[disabled] {
+    pointer-events: none; /* Prevent interaction */
+    opacity: 0.5; /* Optional: visually indicate the input is disabled */
 }
