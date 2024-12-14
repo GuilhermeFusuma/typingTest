@@ -1,0 +1,46 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: system-ui;
+}
+main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-image: linear-gradient(
+        45deg,
+        rgb(52, 73, 83),
+        rgb(46, 70, 82)
+    );
+}
+main h1 {
+    color: rgb(73, 150, 150);
+    font-size: 3rem;
+    position: absolute;
+    left: 5%;
+    top: 2%;
+}
+#textbox {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(78, 95, 109);
+    min-width: 600px;
+    width: 60vw;
+}
+.line {
+    display: flex;
+}
+.word {
+    display: flex;
+    margin: 3px;
+    font-size: 1.4rem;
+}
+.letter {
+    color: rgb(214, 214, 214);
+}
+.correct {
+    color: lime;
+}
+.incorrect {
+    color: red;
+}
